@@ -56,16 +56,16 @@ function App() {
   //   localStorage.setItem("todos", JSON.stringify(todos));
   // };
 
-  // const onUpdate = (updatedTitle, id) => {
-  //   setTodos(
-  //     todos.map((todo) => {
-  //       if (todo.id === id) {
-  //         todo.title = updatedTitle;
-  //       }
-  //       return todo;
-  //     })
-  //   );
-  // };
+  const onUpdate = (updatedTitle, id) => {
+    setTodos(
+      todos.map((todo) => {
+        if (todo.id === id) {
+          todo.title = updatedTitle;
+        }
+        return todo;
+      })
+    );
+  };
 
 
   const [todos, setTodos] = useState(intiTodo);
