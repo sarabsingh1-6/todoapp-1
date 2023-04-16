@@ -42,20 +42,6 @@ function App() {
     setTodos([...todos, myTodo]);
   };
 
-  // const onUpdate = () => {
-  //   const newList = [...todos];
-  //   newList.sort();
-  //   setTodos(newList);
-  // }
-
-
-  // const onUpdate = (todo) => {
-  //   const newList = [...todo];
-  //   newList.sort();
-  //   setTodos(newList);
-  //   localStorage.setItem("todos", JSON.stringify(todos));
-  // };
-
   const onUpdate = (updatedTitle, id) => {
     setTodos(
       todos.map((todo) => {
